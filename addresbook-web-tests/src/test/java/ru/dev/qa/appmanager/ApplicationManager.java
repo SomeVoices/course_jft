@@ -16,7 +16,7 @@ public class ApplicationManager {
 
   public void init() {
     wd = new ChromeDriver();
-    wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    wd.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
     sessionHelper = new SessionHelper(wd);
     groupHelper = new GroupHelper(wd);
     navigationHelper = new NavigationHelper(wd);
